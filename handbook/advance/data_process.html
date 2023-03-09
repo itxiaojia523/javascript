@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TypeScript4 文档</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="TypeScript4 最新官方文档翻译">
+    
+    <link rel="preload" href="/javascript/assets/css/0.styles.34aa0218.css" as="style"><link rel="preload" href="/javascript/assets/js/app.9e9746d9.js" as="script"><link rel="preload" href="/javascript/assets/js/3.cd0d221c.js" as="script"><link rel="preload" href="/javascript/assets/js/1.3b1cd4a9.js" as="script"><link rel="preload" href="/javascript/assets/js/12.2e8f77df.js" as="script"><link rel="prefetch" href="/javascript/assets/js/10.c1c15587.js"><link rel="prefetch" href="/javascript/assets/js/11.860f9024.js"><link rel="prefetch" href="/javascript/assets/js/13.0854c345.js"><link rel="prefetch" href="/javascript/assets/js/14.4f43de46.js"><link rel="prefetch" href="/javascript/assets/js/15.2d30fba9.js"><link rel="prefetch" href="/javascript/assets/js/16.33f7d518.js"><link rel="prefetch" href="/javascript/assets/js/17.97a6e2a1.js"><link rel="prefetch" href="/javascript/assets/js/18.3d6e591f.js"><link rel="prefetch" href="/javascript/assets/js/19.e3697c1e.js"><link rel="prefetch" href="/javascript/assets/js/20.a5fbb36e.js"><link rel="prefetch" href="/javascript/assets/js/21.3fc2e4a9.js"><link rel="prefetch" href="/javascript/assets/js/22.4bedeae3.js"><link rel="prefetch" href="/javascript/assets/js/23.c5370ffc.js"><link rel="prefetch" href="/javascript/assets/js/24.9cc70a9a.js"><link rel="prefetch" href="/javascript/assets/js/25.77f316e1.js"><link rel="prefetch" href="/javascript/assets/js/26.db12fd9d.js"><link rel="prefetch" href="/javascript/assets/js/27.df322e01.js"><link rel="prefetch" href="/javascript/assets/js/28.1f62b157.js"><link rel="prefetch" href="/javascript/assets/js/29.1e77795e.js"><link rel="prefetch" href="/javascript/assets/js/30.1b6b4463.js"><link rel="prefetch" href="/javascript/assets/js/31.82756d30.js"><link rel="prefetch" href="/javascript/assets/js/32.d570d8d8.js"><link rel="prefetch" href="/javascript/assets/js/33.28e57417.js"><link rel="prefetch" href="/javascript/assets/js/34.a6c68519.js"><link rel="prefetch" href="/javascript/assets/js/35.244a7422.js"><link rel="prefetch" href="/javascript/assets/js/36.2c5a042c.js"><link rel="prefetch" href="/javascript/assets/js/4.bd3236bb.js"><link rel="prefetch" href="/javascript/assets/js/5.68d5ba89.js"><link rel="prefetch" href="/javascript/assets/js/6.a6f9ef00.js"><link rel="prefetch" href="/javascript/assets/js/7.6055b080.js"><link rel="prefetch" href="/javascript/assets/js/8.179b1ae3.js"><link rel="prefetch" href="/javascript/assets/js/9.cd36f0d6.js">
+    <link rel="stylesheet" href="/javascript/assets/css/0.styles.34aa0218.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>TypeScript4 文档</h3> <p class="description" data-v-59e6cb88>TypeScript4 最新官方文档翻译</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/javascript/" class="home-link router-link-active"><!----> <span class="site-name">TypeScript4 文档</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/javascript/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      小贾的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/itxiaojia523" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/712139234359182/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>7</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/javascript/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      小贾的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/itxiaojia523" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/712139234359182/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/javascript/" class="sidebar-heading clickable router-link-active"><span>欢迎学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/javascript/" aria-current="page" class="sidebar-link">学前必读</a></li><li><a href="/javascript/handbook/问题集.html" class="sidebar-link">问题集</a></li><li><a href="/javascript/handbook/面试题.html" class="sidebar-link">面试题</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/javascript/handbook/js" class="sidebar-heading clickable"><span>基础学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group depth-0"><a href="/javascript/handbook/prototype" class="sidebar-heading clickable open"><span>深入学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/javascript/handbook/advance/prototype.html" class="sidebar-link">原型与原型链</a></li><li><a href="/javascript/handbook/advance/scope.html" class="sidebar-link">作用域</a></li><li><a href="/javascript/handbook/advance/context.html" class="sidebar-link">执行上下文栈</a></li><li><a href="/javascript/handbook/advance/variable_object.html" class="sidebar-link">变量对象</a></li><li><a href="/javascript/handbook/advance/data_process.html" aria-current="page" class="active sidebar-link">数据处理</a></li><li><a href="/javascript/handbook/advance/function_tools.html" class="sidebar-link">工具类函数</a></li><li><a href="/javascript/handbook/advance/代码优化.html" class="sidebar-link">代码优化</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title"></h1> <div data-v-8a445198><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p>数组方法
+// arr.slice(start,end)
+// 剪切数组，返回剪切之后的数组，不改变原数组
+// 1、传入一个参数，表示起始位置，结束位置为最末尾
+var colors = ['red','blue','green']
+colors.slice(2) //['green']
+// 2、传入2个参数，表示起始位置与结束位置，但不包括结束位置所在的元素
+colors.slice(1,2) //['blue']</p> <p>// arr.splice(startIndex,deleteCount,item) 返回删除元素组成的数组，原数组变了
+// [起始位置（ 数组下标） | 要删除的项数 为0 | 要插入的元素]
+// tips:这个方法会因为参数的不同而实现不同的功能
+// 1.删除：arr.splice(startIndex, deleteCount)
+// 传入两个参数，第一个为位置（ 数组下标），第二个为删除的项数，可以删除任意项，
+var colors = ['red','blue','green']
+colors.splice(1,1) //['blue']
+//2.添加元素 删除项数为0
+var colors = ['red','blue','green']
+colors.splice(1,0,'gray') //[]
+console.log(colors) // ['red','gray','blue','green']
+//3.替换元素
+var colors = [&quot;red&quot;, &quot;gray&quot;, &quot;blue&quot;, &quot;green&quot;]
+colors.splice(2,2,'yellow') // [&quot;blue&quot;, &quot;green&quot;]
+console.log(colors); //[&quot;red&quot;, &quot;gray&quot;, &quot;yellow&quot;]</p> <p>数组迭代和reduce归并</p> <p>迭代方法
+ES5定义了5个迭代方法
+每个方法接收2个参数
+要在每一项上运行的函数 | 运行该函数的作用域对象（可选）</p> <p>运行的函数包括3个参数
+[数组项的值 | 该项在数组中的位置 | 数组对象本身</p> <p>arr.every()
+检查数组中的项是否满足某个条件
+每一项都返回true,则返回true
+var nums = [1,2,3,4,5,4,3,2,1]
+nums.every((item, index, arr)=&gt; item &gt;2 ) //false</p> <p>arr.some()
+检查数组中的项是否满足某个条件
+数组中某一项返回true,则返回true
+var nums = [1,2,3,4,5,4,3,2,1]
+nums.some((item, index, arr)=&gt; item &gt;2 ) //true</p> <p>arr.forEach()
+对数组中的每一项运行给定函数，这个方法没有返回值
+//返回nums中每一项乘以2的数组
+var nums = [1,2,3,4,5,4,3,2,1]
+nums.forEach((item, index, arr)=&gt; item * 2 ) // undefined</p> <p>tips： map、forEach里不可以使用continue、break ,每一项都会执行，如果遍历中要用到continue或break提升效率，则可以使用for()循环 或 for...of..循环</p> <p>此处方法都会对数组进行遍历
+参数一般为：函数</p> <p>arr.filter()
+返回true的项组成的新数组
+//返回nums中所有值大于2的数组
+var nums = [1,2,3,4,5,4,3,2,1]
+nums.filter((item, index, arr)=&gt; item &gt;2 ) //[3, 4, 5, 4, 3]</p> <p>arr.map((item, index, self)=&gt; ({}) )
+返回每次函数调用的结果组成的新数组
+//返回nums中每一项乘以2的数组
+var nums = [1,2,3,4,5,4,3,2,1]
+nums.map((item, index, self)=&gt; item * 2 ) // [2, 4, 6, 8, 10, 8, 6, 4, 2]</p> <p>7、arr.find()     arr.findIndex()
+找到返回true,没找到返回undefined,  true的子item 会被返回
+只返回第一个
+[1,4,9,10,15].find((item, index, arr)=&gt;{
+return item &gt; 9;
+}) //10
+[1,4,9,10,15].findIndex((item, index, arr)=&gt;{
+return item &gt; 10;
+}) //4</p> <p>归并操作
+arr.reduce(function（PRE,CUR,INDEX,ARR）=&gt; ({}) , {})
+reduce接收两个参数
+1.函数接收4个参数[前一个值 | 当前值 | 项的索引 | 数组对象本身]
+2. 初始值</p> <p>从左开始
+//求数组所有元素之和
+var nums = [1,2,3,4,5]
+nums.reduce((prev,cur,index,arr)=&gt;prev+cur) //15</p> <p>arr.reduceRight()
+从右开始</p> <p>//计算每个元素出现的次数
+        // {name: 1, age: 2, GENDER: 3}
+        let arr = ['name','age','age','GENDER','GENDER','GENDER']
+        let result = arr.reduce((pre,cur) =&gt; {
+            if(!pre[cur]){
+                pre[cur] = 1
+            }else{
+                pre[cur]++
+            }
+            return pre
+        },{})
+        console.log(result);</p> <p>// 字符转出现最多的字符，出现了几次
+        const find = (str)=&gt;{
+            // 字符串转数组 [...str]
+            const map = [...str].reduce((pre,cur)=&gt;{
+                if(!pre[cur]){
+                    pre[cur] = 1
+                }else{
+                    pre[cur]++
+                }
+                return pre
+            },{})
+            // console.log(map); {h: 1, e: 1, l: 2, o: 1}
+            // 将对象转为数组，这是一个二维数组
+            // console.log(Object.entries(map)); 0: (2) ['h', 1]
+            // 数组的解构赋值
+            const [[chart,count]] = Object.entries(map).sort(([,val1],[,val2])=&gt; val2 -val1)
+            // console.log(arr); 0: (2) ['l', 2]
+            // console.log(chart,count); l 2
+            return {
+                chart,
+                count
+            }
+        }
+        console.log(find('hello'));</p> <p>数组的交集，补集和并集
+  const arrOne = [1,2,3]
+        const arrTwo = [2,3,4,5]
+        //数组交集 [2,3]
+        const intersectionFn = (arr1,arr2)=&gt;{
+            // filter 返回true的项组成的新数组
+            const result = arr1.filter(item1 =&gt; {
+                // some 检查数组中的项是否满足某个条件 数组中某一项返回true,则返回true
+                return arr2.some(item2 =&gt; {
+                    return item2 === item1
+                })
+            })
+            console.log('交集',result);
+            return result
+        }
+        intersectionFn(arrOne,arrTwo)
+        //数组补集 arr2的补集
+        const completeFn = (arr1,arr2)=&gt;{
+            // every 检查数组中的项是否满足某个条件 每一项都返回true,则返回true
+            const result = arr1.filter( item1 =&gt; arr2.every( item2 =&gt; item2 !== item1))
+            console.log('arr2的补集',result);
+            return result
+        }
+        completeFn(arrOne,arrTwo)
+        //数组并集 [1,2,3,4,5]
+        const unionFn = (arr1,arr2)=&gt;{
+            //concat
+            //没有传递参数，那么只是复制当前数组并返回副本，原数组不变；
+            //传递一个元素（数组）或多个元素（数组）,会将其合并到arr中，返回新数组，原数组不变
+            const result = arr1.filter( item1 =&gt; arr2.every( item2 =&gt; item2 !== item1)).concat(arr2)
+            console.log('并集',result);
+            return result
+        }
+        unionFn(arrOne,arrTwo)</p> <p>//当数组的数据是对象时，要利用对象的属性来判断
+        const classOne = [
+            {userId:1, name:'小赵'},
+            {userId:2, name:'Tom'},
+            {userId:3, name:'Mary'}
+        ]    
+        const classTwo = [
+            {userId:2, name:'Tom'},
+            {userId:3, name:'Mary'},
+            {userId:4, name:'小张'}
+        ]      
+        const intersectionFn = (arr1,arr2)=&gt;{
+            const result = arr1.filter( item1 =&gt; arr2.some(item2 =&gt; item2.userId === item1.userId))
+            console.log('交集',result);
+            return result
+        }  
+        intersectionFn(classOne,classTwo)
+        const completeFn = (arr1,arr2)=&gt;{
+            const result = arr1.filter( item1 =&gt; arr2.every(item2 =&gt; item2.userId !== item1.userId))
+            console.log('arr2的补集',result);
+            return result
+        }  
+        completeFn(classOne,classTwo)
+        const unionFn = (arr1,arr2)=&gt;{
+            const result = arr1.filter( item1 =&gt; arr2.every(item2 =&gt; item2.userId !== item1.userId)).concat(classTwo)
+            console.log('并集',result);
+            return result
+        }  
+        unionFn(classOne,classTwo)</p> <p>数组排序sort，reverse</p> <p>arr.reverse()
+反转数组的顺序，并返回重新排序之后的数组， 原数组会被改变
+var arr1 = [1,2,3,'red','blue']
+arr1.reverse() //[&quot;blue&quot;, &quot;red&quot;, 3, 2, 1]</p> <p>arr.sort()
+如果不传参数，默认情况下数组内的元素会被转换为字符串进行比较，因此一般不推荐直接使用默认的arr.sort()进行排序。</p> <p>返回值排序后的新数组。原数组会被改变
+注意：sort里接收一个比较函数
+var b = [1,2,3]
+//升序
+b.sort((a,b)=&gt;a-b) //[1, 2, 3]
+//降序
+b.sort((a,b)=&gt;b-a) //[3, 2, 1]</p> <p>数组求和以及斐波那契数列
+    const data = [1,2,3,4]
+        const sum = (arr)=&gt;{
+            let result = 0
+            for( let i = 0; i&lt;arr.length; i++){
+                result = arr[i] + result
+            }
+            console.log('合计',result);
+            return result
+        }
+        sum(data)
+        // 斐波那契数列 F(0) = 0 F(1) = 1 F(2)=1 F(n) = F(n-1) = F(n-2) n&gt;= 2 n属于正整数
+        // 当前数 = 前两位数之和
+        // 目标：问第几项，得到那一项的值
+        // 1.递归的方法 - 性能缺陷
+        const getValue = (n)=&gt;{
+            if(n &lt; 2){
+                return n
+            }
+            return getValue(n-1) + getValue(n-2)
+        }
+        console.log('递归',getValue(3));
+        // 2.动态规划
+        const dynamicGetValue = (n)=&gt;{
+            if(n &lt; 2){
+                return n
+            }
+            let numArr = [0,1]
+            // for循环变量 性能高
+            for(let i = 2; i&lt;= n; i++){
+                numArr.push(numArr[0] + numArr[1]) //[0, 1, 1]
+                // 删除：splice(index, num)
+                // 传入两个参数，第一个为位置（ 数组下标），第二个为删除的项数，可以删除任意项，返回删被除元素组成的数组，原数组变了
+                // 传入3个参数， [起始位置（ 数组下标） | 要删除的项数 为0 | 要插入的元素]， 最终返回被删除掉的元素组成的数组，因为这里删除项数为0，因此会返回空数组
+                numArr.splice(0,1) //[1, 1]
+            }
+            return numArr[1]
+        }
+        console.log('动态',dynamicGetValue(2));</p> <p>简单：数组和等于目标值</p> <p>const data = [
+            {userId: 1, name:'小明', chineseScore: 90, mathScore: 90},
+            {userId: 2, name:'小往', chineseScore: 80, mathScore: 90},
+            {userId: 3, name:'小张', chineseScore: 70, mathScore: 90},
+            {userId: 4, name:'小李', chineseScore: 60, mathScore: 90},
+            {userId: 5, name:'小白', chineseScore: 50, mathScore: 90},
+        ]
+        // 找出成绩高于170的学生
+        const filterStudent = (arr,target)=&gt;{
+            let result = []
+            for(let i = 0; i &lt; arr.length; i++){
+                if(arr[i].chineseScore + arr[i].mathScore &gt;= target){
+                    result.push(arr[i].name)
+                }
+            }
+            console.log(result);
+            return result
+        }
+        filterStudent(data,170)
+        // 给定一个数组,给定一个目标值，返回数组内满足条件的下标组合
+        const nums = [3,2,7,11,15]
+        const findTarget = (nums,target)=&gt;{
+            let result = {}
+            for(let i = 0; i &lt; nums.length; i++){
+                for(let j =0; j &lt; nums.length; j++){
+                    if(nums[i] + nums[j] === target){
+                        return { index:[i,j], value:[nums[i],nums[j]]}
+                    }
+                }
+            }
+        }
+        let result = findTarget(nums,9)
+        console.log(result);</p> <p>数组去重for filter set</p> <p>// 数组去重
+        //1.for循环嵌套
+/ / 借助新数组，如果原数组中的值 与其重复则不插入
+        var arr = [8,11,11,13,14,14,15]
+        var newArr = []
+        newArr[0] = arr[0]
+        // arr中每个元素
+        for(var i =0 ; i&lt; arr.length; i++){
+            // 新数组中每个元素
+            for(var k =0; k &lt; newArr.length; k++){
+                // 如果有相同得，没必要继续内循环
+                if(arr[i] === newArr[k]){
+                    break
+                }
+                // 直到比到新数组最后一项，才知道是否要插入
+                if(k === newArr.length -1 ){
+                    newArr.push(arr[i])
+                }
+            }
+        }
+        console.log(newArr);</p> <div class="language- extra-class"><pre><code>或
+        var arr = [8,11,11,13,14,14,15]
+        const forRemoveDuplicate = (arr)=&gt;{
+            for(let i =0 ; i&lt; arr.length; i++){
+                for( let j = i+1; j&lt; arr.length; j++){
+                    if(arr[i] === arr[j]){
+                        arr.splice(j,1)
+                        j--
+                    }
+                }
+            }
+            return arr
+        }
+        let result = forRemoveDuplicate(arr)
+        console.log(result);
+
+//filter去重
+        const forRemoveDuplicate = (arr)=&gt;{
+            // 返回true的项组成的新数组
+            return arr.filter((item,index,self)=&gt;{
+                // indexOf 第一个匹配到的元素的位置
+                return self.indexOf(item) === index
+            })
+        }
+//es6 set去重
+        var arr = [8,11,11,13,14,14,15,16]
+        const es6RemoveDuplicate = (arr)=&gt;{
+            return Array.from(new Set(arr))
+        }
+        let result = es6RemoveDuplicate(arr)
+        console.log(result);
+</code></pre></div><p>将对象类型数据转为数组对象
+    const data = {
+            beijing:100,
+            shanghai : 60,
+            guangzhou: 80
+        }
+        // (3) [{…}, {…}, {…}]
+            // 0: {name: 'beijing', value: 100}
+            // 1: {name: 'shanghai', value: 60}
+            // 2: {name: 'guangzhou', value: 80}
+        const objToArr = (data, realName, realValue)=&gt;{
+            // console.log(Object.keys(data)); //['beijing', 'shanghai', 'guangzhou']
+            const res = Object.keys(data).map((key)=&gt;{
+                return{ [realName]: key, [realValue]:data[key] }
+            })
+            console.log(res);
+            return res
+        }
+        objToArr(data,'name','value')
+数组对象转为普通对象
+  const data1 = [ //二维数组<br>
+            ['key1','value1'],
+            ['key2','value2']
+        ]
+        console.log(Object.fromEntries(data1));
+        // {key1: 'value1', key2: 'value2'}</p> <p>// 数组对象转为普通对象
+        const data = [
+            {name: 'beijing', value: 100},
+            {name: 'shanghai', value: 60},
+            {name: 'guangzhou', value: 80}
+        ]
+        //     {
+        //     beijing:100,
+        //     shanghai : 60,
+        //     guangzhou: 80
+        //      }
+        const arrToObj = (data,realName,realValue)=&gt;{
+            // 返回每次函数调用的结果组成的新数组
+            const res = data.map((item)=&gt;{
+                return [ item[realName], item[realValue]]
+            })
+            console.log(res); //得到二维数组
+            return Object.fromEntries(res)
+        }
+        let result = arrToObj(data,'name','value')
+        console.log(result);
+数据分组处理</p> <p>// 根据年级表和学生表，生成学生对象
+        const gradeList = [
+            { grade1: '一年级'},
+            { grade2: '二年级'},
+            { grade3: '三年级'}
+        ]
+        const studentList = [
+            { grade1: ['小明','小郑','小张']},
+            { grade2: ['阿毛','阿毛毛','阿阿毛']},
+            { grade3: ['tom','jacj','jerry']}
+        ]
+        // 想得到
+        // students = [
+        //     {name : '小明' ,grade : '一年级'}
+        // ]
+        const parseDataFn = (data, gradeList)=&gt;{
+            let result = []
+            for ( let i = 0; i &lt; data.length; i++){
+                const item = data[i] // grader1 [...]
+//for in 用于循环对象
+                for (const key in gradeList[i]) {
+                    console.log(key); // grade1
+                    for( let j = 0; j &lt; item[key].length; j++){
+                        const nameValue = item[key][j] // 拿到每个学生名字 小明，小张...
+                        result.push({name : nameValue, grade: gradeList[i][key]})
+                    }
+                }
+            }
+            console.log(result);
+            return result
+        }
+        parseDataFn(studentList,gradeList)
+数组，字符串at方法 取最后一个元素
+  // 数组，字符串at方法 取最后一个元素
+    const arr = [1,2,3,4]
+    console.log(arr.at(-1)); // 4 倒一
+    console.log(arr.at(-2)); // 3 倒二
+处理小数点位数
+根据num获取它的小数点位数
+0.1 -&gt; 1位</p> <p>const getDecimal = (num)=&gt;{
+      let len = 0
+      if(Math.floor(num) === num){
+        //如果是整数
+        return 0
+      }
+      // 利用字符串的substr方法
+      // var str=&quot;Hello world!&quot;;
+      // var n=str.substr(2,3)  //llo
+      const str = String(num)
+      const pointIndex = str.indexOf('.') //小数点下标
+      console.log(str.substr(pointIndex + 1)); //得到小数点后的数字的 str  
+      len = str.substr(pointIndex + 1).length
+      console.log(len);
+      return len
+    }
+    getDecimal(0.12342)
+数字加法运算
+// 数字加法，把小数转为整数运算 再除回去
+    console.log(0.1+0.2); //0.30000000000000004
+    console.log(1+2); //3</p> <p>const add = (n1,n2)=&gt;{
+      let result = 0
+      const n1Len = getDecimal(n1)
+      const n2Len = getDecimal(n2)
+      const maxLen = n1Len &gt; n2Len ? n1Len : n2Len
+      // Math.pow(4,3); 4的3次方
+      // 这里就是10的 maxLen 次方
+      const maxTimes = Math.pow(10, maxLen)
+      console.log(maxLen, maxTimes); // 1 10
+      result = (n1 * maxTimes + n2 * maxTimes) / maxTimes
+      console.log(result);
+      return result
+    }
+    add(9,0.0002)
+数字乘法
+// 数字乘法
+console.log(1 * 2); //2
+console.log(0.1 * 0.2); //0.020000000000000004
+      const mulFn = (n1,n2)=&gt;{
+      let result = 0
+      const n1Len = getDecimal(n1)
+      const n2Len = getDecimal(n2)
+      const maxLen = n1Len &gt; n2Len ? n1Len : n2Len
+      // Math.pow(4,3); 4的3次方
+      // 这里就是10的 maxLen 次方
+      const n1Times = Math.pow(10, n1Len)
+      const n2Times = Math.pow(10, n2Len)
+      result = (n1 * n1Times) *( n2 * n2Times) / (n1Times * n2Times)
+      console.log(result);
+      return result
+    }
+    mulFn(0.9,2)
+数字除法
+console.log(0.01 / 0.2); // 0.049999999999999996
+console.log(0.1 / 0.2); // 0.5
+    const divisionFn = (n1,n2)=&gt;{
+      let result = 0
+      const n1Len = getDecimal(n1)
+      const n2Len = getDecimal(n2)
+      const maxLen = Math.max(n1Len,n2Len)
+      // Math.pow(4,3); 4的3次方
+      // 这里就是10的 maxLen 次方
+      const maxTimes = Math.pow(10, maxLen)
+      result = (n1 * maxTimes) / (n2 * maxTimes)
+      console.log(result);
+      return result
+    }
+    divisionFn(1,22)
+Math对象常用方法
+// Math对象相关方法
+console.log(Math.ceil(12.1) ); //13  向上取整
+console.log(Math.floor(12.1) ); // 12 向下取整
+console.log(Math.round(12.5) ); //13 四舍五入
+Math.max() //求最大值
+Math.pow(4,3) //求mi  4的三次方
+Math.abs() //求绝对值</p> <p>检测变量类型toString()
+// toString 功能
+    // 1. 转化为字符串
+    const num = 123;
+    console.log('将数字转为字符串', num.toString());
+    // 2.返回一个表示该对象的字符串
+    // Object.prototype.toString.call()  通过call调用原型上的toString(防止重写)
+    console.log(Object.prototype.toString.call(num) ); //[object Number]
+    //第一个值表示Object 没啥含义
+    //第二个值 表表示该对象的字符串
+toString()方法-检测变量类型
+  // object.prototype.toString.call()
+    const num = 321
+//toString 返回一个表示该对象的字符串
+    console.log(Object.prototype.toString.call(num)); //[object Number] 可以知道是number</p> <p>XXX.toString() // xxx就是object</p> <p>获取对象深层次的值
+    // 获取对象深层次的值
+        let res = {
+            status : 0,
+            msg: 'success',
+            data: {
+                config: {
+                    // style : {
+                    //     color: '#000'
+                    // }
+                    style : null
+                }
+            }
+        }
+       
+        // console.log(res.data.config.style.color);
+        // 如果其中有一个环节是null就会报错
+        // 取一个值之前要判断是否存在 方法1
+        // console.log(res.data &amp;&amp; res.data.config &amp;&amp; res.data.config.style &amp;&amp; res.data.config.style.color);
+        // 方法2 配置选择符
+        console.log(res.data?.config?.style?.color); //注意遇到null会返回undefined
+        // 在哪里改?
+        // 方法3 safeGet函数 问题同二
+        const safeGet = (obj,path)=&gt;{
+            const keys = path.split('.')
+            for (const key of keys) {
+                // console.log(key,keys);  data (4) ['data', 'config', 'style', 'color']
+                if (obj){
+                    obj = obj[key]
+                }
+            }
+            return obj
+        }
+        safeGet(res,'data.config.style.color')</p> <p>toLocaleString 数值转货币
+  // toLocaleString(locale,options)  参数：1.语言类型字符串 2.配置对象
+        // 1.数字分割 123,456.789
+        const num1 = 123456.789
+        console.log(num1.toLocaleString()); //123,456.789
+        // 2.数字转为百分比
+        const num2 = 0.12
+        console.log(num2.toLocaleString('zh',{style: 'percent'})); //12%
+        // 3.数字转货币表示
+        const num3 = 1000000
+        console.log(num3.toLocaleString('zh',{style: 'currency', currency:'cny'})); //¥1,000,000.00
+        console.log(num3.toLocaleString('zh',{style: 'currency', currency:'cny',currencyDisplay:'code'})); //CNY 1,000,000.00
+        console.log(num3.toLocaleString('zh',{style: 'currency', currency:'cny',currencyDisplay:'name'})); //1,000,000.00人民币</p> <p>当parseInt遇到map
+const data = ['1','2','3']
+        console.log(data.map(parseInt)); //1 nan nan
+        // map里需要一个函数 函数有三个参数 item index self
+        // parseInt(str,[radix进制2-36]) 函数可解析一个字符串，并返回一个整数
+        // 1 0
+        // 2 1 //没有1进制
+        // 3 2 // 2进制里没有3
+        console.log(parseInt(&quot;0x10&quot;,16));</p> <div class="language- extra-class"><pre><code>   // parseInt(str,[radix进制2-36]) 函数可解析一个字符串，并返回一个整数
+</code></pre></div><p>// 当忽略参数 radix , JavaScript 默认数字的基数如下:
+        //     如果 string 以 &quot;0x&quot; 开头，parseInt() 会把 string 的其余部分解析为十六进制的整数。
+        //     如果 string 以 0 开头，那么 ECMAScript v3 允许 parseInt() 的一个实现把其后的字符解析为八进制或十六进制的数字。
+        //     如果 string 以 1 ~ 9 的数字开头，parseInt() 将把它解析为十进制的整数。</p> <p>传送数据value是undefined时
+// 传送数据给后端，value是undefined时，被忽略，理想要{}
+        const formInfo = [
+            {
+                fieldId: 1,
+                value: undefined
+            },
+            {
+                fieldId:2,
+                value: 2
+            }
+        ]
+        const result = JSON.stringify(formInfo)
+        console.log(result,typeof(result));
+        // [{&quot;fieldId&quot;:1},{&quot;fieldId&quot;:2,&quot;value&quot;:2}] string
+        // 以下处理
+        // 方法1
+        const newFormInfo = formInfo.map(item =&gt; {
+            const value = item.value === undefined ? '' : item.value
+            return {...item,value}
+        })
+        const result2 = JSON.stringify(newFormInfo)
+        console.log(result2);
+        // 方法2 利用JSON.stringfy的第二参数
+        const result3 = JSON.stringify(formInfo, (key,value)=&gt; value === undefined? '' : value)
+        console.log(result3);</p> <p>算法
+    // 根据roles数组，生成key:id值 value:角色名  对象
+    const initRoleNames = (roles:IRole[])=&gt;{
+        const newRoleNames = roles.reduce((prev:any,role)=&gt;{
+            prev[role._id] = role.name
+            return prev
+        } ,{})
+        // 保存起来
+        setRoleNames(newRoleNames)        
+    }</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/javascript/handbook/advance/variable_object.html" class="prev">
+          变量对象
+        </a></span> <span class="next"><a href="/javascript/handbook/advance/function_tools.html">
+          工具类函数
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/javascript/assets/js/app.9e9746d9.js" defer></script><script src="/javascript/assets/js/3.cd0d221c.js" defer></script><script src="/javascript/assets/js/1.3b1cd4a9.js" defer></script><script src="/javascript/assets/js/12.2e8f77df.js" defer></script>
+  </body>
+</html>
